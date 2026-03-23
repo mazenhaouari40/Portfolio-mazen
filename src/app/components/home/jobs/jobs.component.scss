@@ -1,0 +1,255 @@
+@import "./../../../../variables.scss";
+
+
+::ng-deep .jobs .jobs-tabs {
+    display: flex;
+
+    .tab-content{
+        margin-left: 38px;
+    }
+
+    ul{
+        display: block;
+        width: 200px;
+        
+        border: none;
+    }
+
+    a.active{
+        background-color: $LightNavy !important;
+        color: $Green !important;
+        border-color: transparent !important;
+        border-radius: 0px;
+    }
+    
+    a:hover{
+        background-color: $LightNavy !important;
+        color: $Green !important;
+        border-color: transparent !important;
+        border-radius: 0px;
+    }
+
+    a{
+        display: inline-block;
+        -webkit-text-decoration: none;
+        text-decoration: none;
+        -webkit-text-decoration-skip-ink: auto;
+        text-decoration-skip-ink: auto;
+        color: inherit;
+        position: relative;
+        -webkit-transition: all 0.25s cubic-bezier(0.645,0.045,0.355,1);
+        transition: all 0.25s cubic-bezier(0.645,0.045,0.355,1);
+        cursor: pointer;
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-align-items: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        width: 100%;
+        
+        background-color: transparent;
+        height: 50px;
+        padding: 0 20px 2px;
+        -webkit-transition: all 0.25s cubic-bezier(0.645,0.045,0.355,1);
+        transition: all 0.25s cubic-bezier(0.645,0.045,0.355,1);
+        text-align: left;
+        white-space: nowrap;
+        font-family: $CodeFont;
+        font-size: 13px;
+        color: $Slate;
+    }
+
+    li{
+        border-left: 2px solid $LightestNavy;
+        border-left-width: 2px;
+        border-left-style: solid;
+        border-left-color: rgb(48, 60, 85);
+    }
+}
+
+.jobs{
+
+    max-width: 1400px;
+    margin: AUTO;
+
+    .title-tab-content{
+        color: $LightestSlate;
+        font-size: 22px;
+        font-weight: 500;
+        margin-bottom: 5px;
+
+        .company-tab-content{
+            color: $Green;
+        }
+    }
+
+    .job-time{
+        font-family: $CodeFont;
+        font-size: 13px;
+        font-weight: normal;
+            -webkit-letter-spacing: 0.05em;
+        -moz-letter-spacing: 0.05em;
+        -ms-letter-spacing: 0.05em;
+        letter-spacing: 0.05em;
+        color: $LightSlate;
+        margin-bottom: 30px;
+    }
+    
+    .job-description{
+        position: relative;
+        padding-left: 30px;
+        margin-bottom: 10px;
+        font-size: 18px;
+
+        &:before {
+            content: '▹';
+            position: absolute;
+            left: 0;
+            color: $Green;
+        }
+    }
+}
+
+
+
+@media (max-width: 768px){
+    .jobs {
+        .job-description{
+            padding: 0px;
+        }
+    }
+    ::ng-deep .jobs-tabs{
+        display: block !important;
+
+        .tab-content{
+            margin-left: 0px !important;
+        }
+
+        ul {
+            display: block;
+            width: 100% !important;
+            margin-bottom: 50px;
+        }
+    }
+}
+
+
+.education-item {
+  margin-bottom: 30px;
+  margin-left:auto;
+  padding-left: 20px;
+  border-left: 2px solid rgb(48, 60, 85);
+  position: relative;
+}
+
+.education-item::before {
+  content: '';
+  position: absolute;
+  left: -6px;
+  top: 5px;
+  width: 10px;
+  height: 10px;
+  background-color: rgb(48, 60, 85);
+  border-radius: 50%;
+}
+
+.education-school {
+  color: #0a2463; /* bleu foncé (titre principal) */
+  font-size: 20px;
+  margin: 0;
+}
+
+.education-speciality {
+  color: #3e5c76; /* bleu moyen */
+  font-size: 16px;
+  margin: 5px 0;
+}
+
+.education-date {
+  color: #748cab; /* bleu clair / secondaire */
+  font-size: 14px;
+}
+
+
+.job-header-line {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.title-tab-content {
+  margin: 0;
+  color: #0a2463;
+}
+
+.job-location {
+  color: #0a0d11;
+  font-size: 14px;
+  white-space: nowrap;
+}
+
+
+// technologie
+
+.tech-container {
+  overflow: hidden;
+  padding: 20px 0;
+}
+
+.tech-scroll {
+  display: flex;
+  width: max-content;
+  animation: scroll 15s linear infinite;
+}
+
+.tech-item {
+  min-width: 140px;
+  margin: 0 16px;
+  padding: 20px;
+  text-align: center;
+  background: rgba(214, 218, 227, 0.6);
+  border-radius: 12px;
+  border: 1px solid rgba(100, 149, 237, 0.2);
+  transition: 0.3s;
+}
+
+.tech-item:hover {
+  transform: scale(1.1);
+  border-color: #dadcdf;
+}
+
+.tech-icon {
+  width: 50px;
+  height: 50px;
+  margin: auto;
+}
+
+.tech-icon img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.tech-name {
+  margin-top: 10px;
+  color: #030407;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.tech-container:hover .tech-scroll {
+  animation-play-state: paused;
+}

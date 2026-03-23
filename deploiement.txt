@@ -1,0 +1,4 @@
+ng add angular-cli-ghpages        
+ npm install -g angular-cli-ghpages
+ng build --configuration production
+npx angular-cli-ghpages --dir=dist/Mazen-portfolio

@@ -1,0 +1,16 @@
+/* You can add global styles to this file, and also import other style files */
+
+$Navy         : #ffffff;           // Main background → white
+$LightNavy    : #e8edf7;           // Secondary background → soft blue-tinted white
+$LightestNavy : #0d4bdd;           // Surfaces / drawer / sidebar → deep navy
+$Slate        : #111111;           // Body text → near black
+$LightSlate   : #3a4a6b;           // Secondary text → muted navy
+$LightestSlate: #0a2463;           // Headings → deep navy
+$White        : #0a2463;           // Strong emphasis → deep navy
+$Green        : #0a2463;           // Primary accent → deep navy
+$GreenOpacity : rgba(10,36,99,0.08); // Hover / overlay → subtle navy tint
+
+// Font stacks (unchanged — reference only)
+// $CodeFont  : 'SF Mono', 'Fira Code', 'Fira Mono', 'Roboto Mono', monospace;
+$MainFont: Calibre,San Francisco,SF Pro Text,-apple-system,system-ui,BlinkMacSystemFont,Roboto,Helvetica Neue,Segoe UI,Arial,sans-serif;
+$CodeFont: SF Mono, Fira Code, Fira Mono, Roboto Mono, Lucida Console, Monaco, Monospace;
