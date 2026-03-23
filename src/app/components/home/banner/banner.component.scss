@@ -106,20 +106,21 @@ h3 {
   }
 
   .content {
-    margin-top: 40px;
+    margin-top: 20px;
   }
 
   .banner-description p {
     margin: 0 auto;
   }
 
-  .banner-right {
-    margin-top: 30px;
-  }
-
+.banner-right {
+  margin-top: -30px;
+  margin-left: 10px;
+}
   .about-img-container img {
-    width: 200px;
-    height: 300x;
+    max-width: 159px;
+    height: 150px;
+     border-radius: 80%;
   }
 
   h2,
