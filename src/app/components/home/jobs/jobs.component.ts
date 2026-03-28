@@ -9,31 +9,49 @@ export class JobsComponent implements OnInit {
 
  Experiences: any[] = [
     {
-      Tab: 'Sofrecom Tunisie',
-      Title: 'Intern ',
-      Date: ' July 2025 – August 2025',
-      Description: [
-        'As part of the Agilis project, a network connection request management solution, I developed a solicitation API to enable communication between the client and Orange, and I also implemented unit tests using PHPUnit on the controller and service layers.',
-        'Keywords: PHPUnit, Oft, PHP, Swagger, Git, GitLab, Scrum, Jira'
-      ],
-      location: "Tunis, Tunisia"
-    },
+    Tab: 'Sofrecom Tunisie',
+    jobs: [
+
+      {
+        Title: 'Intern',
+        Date: 'February 2026 - August 2026',
+        Description: [
+        ],
+        location: "Tunis, Tunisia"
+      },
+      {
+        Title: 'Intern',
+        Date: 'July 2025 – August 2025',
+        Description: [
+          'As part of the Agilis project, a network connection request management solution, I developed a solicitation API to enable communication between the client and Orange, and I also implemented unit tests using PHPUnit on the controller and service layers.',
+          'Keywords: PHPUnit, Oft, PHP, Swagger, Git, GitLab, Scrum, Jira'
+        ],
+        location: "Tunis, Tunisia"
+      },
+      
+    ]
+   },
     { 
       Tab: 'HR Maps',
-      Title: 'Intern',
-      Date: 'July 2024 – August 2024',
-      Description: [
-        'Developed an admin interface for user and assignment management.',
-        'built a leave management module with real-time submission and approval using WebSocket.',
-        'Set up a CI/CD pipeline with Jenkins and deployed on Render.',
-        'Keywords: WebSocket, Spring Boot, Jenkins, Git, GitHub, Java,Postman, REST API'
+      jobs: [
+              {
+              Title: 'Intern',
+              Date: 'July 2024 – August 2024',
+              Description: [
+                      'Developed an admin interface for user and assignment management.',
+                      'built a leave management module with real-time submission and approval using WebSocket.',
+                      'Set up a CI/CD pipeline with Jenkins and deployed on Render.',
+                      'Keywords: WebSocket, Spring Boot, Jenkins, Git, GitHub, Java,Postman, REST API'
+                    ],
+              location: "Tunis, Tunisia"
+              }
       ],
-            location: "Tunis, Tunisia"
-
     },
     
     {
       Tab: 'OLUMYA TECHNOLOGIES',
+      jobs:[
+        {
       Title: 'Intern',
       Date: 'February 2023 – June 2023 ',
       Description: [
@@ -41,9 +59,15 @@ export class JobsComponent implements OnInit {
         'Keywords: Postman, Java, Spring Boot, JUnit, Gatling, Scala, Swagger, Scrum, REST API, GitLab'
       ],
     location: "Djerba, Tunisia"
+        }
+      ]
+
+
     },
         {
       Tab: 'SOFTSQUARE IT',
+      jobs:[
+        {
       Title: 'Intern',
       Date: 'June 2022 – July 2022 ',
       Description: [
@@ -51,6 +75,9 @@ export class JobsComponent implements OnInit {
         'Keywords: PHP, Symfony 5.4, HTML, CSS, MySQL'
       ],
     location: "Djerba, Tunisia"
+        }
+      ]
+
 
     }
  ];
