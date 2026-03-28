@@ -119,16 +119,6 @@ export class JobsComponent implements OnInit {
 
   ngOnInit(): void {
   }
-  @ViewChild('techContainer') techContainer!: ElementRef;
 
-   scrollAmount = 200; // px à scroller
-
-  scrollLeft() {
-    this.techContainer.nativeElement.scrollBy({ left: -this.scrollAmount, behavior: 'smooth' });
-  }
-
-  scrollRight() {
-    this.techContainer.nativeElement.scrollBy({ left: this.scrollAmount, behavior: 'smooth' });
-  }
 
 }

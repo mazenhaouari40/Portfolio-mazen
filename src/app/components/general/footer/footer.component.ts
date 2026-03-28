@@ -27,13 +27,14 @@ lastUpdate: string = '';
   constructor(
   ) { }
 
+
 ngOnInit() {
-  /*fetch('https://api.github.com/repos/mazenhaouari40/Portfolio-mazen/commits')
+  fetch('https://api.github.com/repos/mazenhaouari40/Portfolio-mazen/commits')
     .then(res => res.json())
     .then(data => {
       const date = data[0].commit.committer.date;
       this.lastUpdate = new Date(date).toLocaleDateString('fr-FR');
-    });*/
+    });
 }
 
 }
