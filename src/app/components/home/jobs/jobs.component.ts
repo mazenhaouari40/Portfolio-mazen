@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, ElementRef, OnInit, ViewChild } from '@angular/core';
 
 @Component({
   selector: 'app-jobs',
@@ -104,12 +104,31 @@ export class JobsComponent implements OnInit {
   }
 ];
 
+  certificats = [
+  {
+    name: 'fsdsdf',
+    logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/angularjs/angularjs-original.svg'
+  },
+  
+];
+
   active = 0
   
   constructor(
   ) { }
 
   ngOnInit(): void {
+  }
+  @ViewChild('techContainer') techContainer!: ElementRef;
+
+   scrollAmount = 200; // px à scroller
+
+  scrollLeft() {
+    this.techContainer.nativeElement.scrollBy({ left: -this.scrollAmount, behavior: 'smooth' });
+  }
+
+  scrollRight() {
+    this.techContainer.nativeElement.scrollBy({ left: this.scrollAmount, behavior: 'smooth' });
   }
 
 }

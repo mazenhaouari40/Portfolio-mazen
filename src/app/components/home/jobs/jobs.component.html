@@ -61,30 +61,31 @@
             </div>
 
 
+<!-- Skills -->
+<div class="about-title mb-5 mt-5" data-aos="fade-up" data-aos-duration="1000">
+  <h3 class="e-font section-title">
+    <span class='code-font n-section-title'>2.3</span> Skills
+  </h3>
+</div>
 
-                    <!--Skills-->
+<div class="tech-wrapper">
+  <button class="scroll-btn left" (click)="scrollLeft()">&lt;</button>
 
-                  <div class="about-title mb-5 mt-5" data-aos="fade-up" data-aos-duration="1000">
-                    <h3 class="e-font section-title">
-                        <span class='code-font n-section-title'>2.3</span> Skills
-                    </h3>
-                </div>
-        
-            <!-- Tech slider -->
-            <div class="tech-container">
-                <div class="tech-scroll">
+  <div class="tech-container" #techContainer>
+    <div class="tech-scroll">
+      <div class="tech-item" *ngFor="let tech of technologies">
+        <div class="tech-icon">
+          <img [src]="tech.logo" [alt]="tech.name" />
+        </div>
+        <div class="tech-name">
+          {{ tech.name }}
+        </div>
+      </div>
+    </div>
+  </div>
 
-                <div class="tech-item" *ngFor="let tech of technologies">
-                    <div class="tech-icon">
-                    <img [src]="tech.logo" [alt]="tech.name" />
-                    </div>
-                    <div class="tech-name">
-                    {{ tech.name }}
-                    </div>
-                </div>
-
-                </div>
-            </div>
+  <button class="scroll-btn right" (click)="scrollRight()">&gt;</button>
+</div>
 
          <!--Next feature-->
             <!-- Certificats-->

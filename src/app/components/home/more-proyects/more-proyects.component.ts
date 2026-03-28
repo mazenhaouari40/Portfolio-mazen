@@ -23,13 +23,6 @@ export class MoreProyectsComponent implements OnInit {
      demoLink:''
     },
     {
-      Title:"Projet d'Ordonnancement des Processus (2023)",
-      Description:"Ce projet a pour objectif d'implémenter différents algorithmes d'ordonnancement des processus dans un système d'exploitation. Ces algorithmes sont : FIFO, SRT,Round Robin,Priorite. Vous trouverez ci-dessous plus de détails en cliquant sur le lien ci-dessus.",
-      Technologies:['Langage C','MakeFile'],
-      ghLink:'https://github.com/mazenhaouari40/Projet_ordonnancement-des-processus',
-     demoLink:''
-    },
-    {
       Title:"Reservation-Hoteliere (2022)",
       Description:"Ce projet est une application web permettant aux utilisateurs de réserver des chambres et de gérer leurs réservations.",
       Technologies:['Php','CSS','Html',"Hack"],
