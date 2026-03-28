@@ -23,8 +23,6 @@ export class HeaderComponent implements OnInit {
   responsiveMenuVisible: Boolean = false;
   pageYPosition: number;
   languageFormControl: FormControl= new FormControl();
-  cvName: string = "loay-elden-gamal-mostafa.pdf";
-  ResumeName: string = "loay-elden-gamal-mostafa.pdf";
 
   constructor(
     private router: Router,
@@ -32,8 +30,6 @@ export class HeaderComponent implements OnInit {
   ) { }
 
   ngOnInit(): void {
-
-   
 
   }
 
@@ -46,26 +42,6 @@ export class HeaderComponent implements OnInit {
     this.responsiveMenuVisible=false;
   }
 
-  downloadCV(){
-      // app url
-      let url = window.location.href;
-      console.log(url,this.cvName)
-
-      // Open a new window with the CV
-      window.open(url + "/../assets/cv/" + this.cvName, "_blank");
-  }
-  
-  downloadResume(){
-   
-    // app url
-    let url = window.location.href;
-    console.log(url,this.ResumeName)
-
-    // Open a new window with the CV
-    window.open(url + "/../assets/cv/" + this.ResumeName, "_blank");
- 
-
-}
 
   @HostListener('window:scroll', ['getScrollPosition($event)'])
     getScrollPosition(event) {

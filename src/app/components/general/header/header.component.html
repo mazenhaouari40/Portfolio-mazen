@@ -9,19 +9,19 @@
             </li>
 
             <li ngbNavItem >
-                <a ngbNavLink ><span class="underline nav-text" routerLink="job"> Resume</span></a>
+                <a ngbNavLink (click)='scroll("jobs")'><span class="underline nav-text" routerLink="job"> Resume</span></a>
                 <ng-template ngbNavContent>Second content</ng-template>
             </li>
             <li ngbNavItem >
-                <a ngbNavLink ><span class="underline nav-text" routerLink="project" >Projects</span></a>
+                <a ngbNavLink (click)='scroll("projects")'><span class="underline nav-text" routerLink="project" >Projects</span></a>
                 <ng-template ngbNavContent>Third content</ng-template>
             </li>
             <li ngbNavItem >
-                <a ngbNavLink ><span class="underline nav-text" routerLink="moreproject" >More Project</span></a>
+                <a ngbNavLink (click)='scroll("moreproject")'><span class="underline nav-text" routerLink="moreproject" >More Project</span></a>
                 <ng-template ngbNavContent>Third content</ng-template>
             </li>
             <li ngbNavItem >
-                <a ngbNavLink ><span class="underline nav-text"  routerLink="contact">Contact</span></a>
+                <a ngbNavLink (click)='scroll("contact")'><span class="underline nav-text"  routerLink="contact">Contact</span></a>
                 <ng-template ngbNavContent>Fourth content</ng-template>
             </li>
             <!--

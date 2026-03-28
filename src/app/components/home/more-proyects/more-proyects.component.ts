@@ -9,6 +9,12 @@ import { Router, NavigationEnd } from '@angular/router';
 export class MoreProyectsComponent implements OnInit {
   Projects = [
     {
+      Title:'Système de Gestion ResearchHub',
+      Description:'Cette Plateforme Permet la soumission d’articles, la gestion du processus d’évaluation par les pairs, l’authentification sécurisée des utilisateurs et propose des fonctionnalités avancées de recherche. Dispose d’une architecture backend , avec intégration de PostgreSQL et exposition de services via des API REST.',
+      Technologies:['Spring boot','Java','PostgreSql','api rest','Angular'],
+      ghLink:'https://github.com/MedAzizL/ResearchHub-Management-System',
+          }
+    ,{
       Title:'Jeu de Pendu (2024)',
       Description:'Ce jeu a ete developpe par Mazen haouari et yazid dhouioui en utilisant langage c. Elle contient deux version graphique et console. Vous trouverez ci-dessous plus de détails en cliquant sur le lien ci-dessus.',
       Technologies:['Langage C','Html','Css','javaScript' ,'WebAssembly'],
@@ -30,31 +36,12 @@ export class MoreProyectsComponent implements OnInit {
      demoLink:'https://drive.google.com/file/d/10643yAEgzhtdw8SItvRSqJhQTUgwd9_6/view?usp=sharing'
     },
     {
-      Title:'Site-e-commerce-Symfony-5.4',
-      Description:"Ce projet est développé avec le framework Symfony. Il vise à aider les utilisateurs à acheter des produits. ",
-      Technologies:['Symfony 5.4','Php','CSS','Html',"Javascript","Twig"],
-      ghLink:'https://github.com/mazenhaouari40/Site-e-commerce-Symfony-5.4-',
-     demoLink:'https://drive.google.com/file/d/1_w-o4q5aXqD9is6ygXu-mprezHtr6U_n/view'
+      Title:'Taquin (2022)',
+      Description:"This project was created by Mazen Haouari and Mahmoud Derbel. We developed four algorithms Breadth-First Search,Depth-First Search, Limited Depth-First Search, A* Algorithm. The goal is to take input and output as global variables, displaying the number of explored and closed nodes in a graphical interface. My focus was on algorithm development, while my friend concentrated on the graphical aspects. ",
+      Technologies:['Python'],
+      ghLink:'https://github.com/mazenhaouari40/Jeu_de_Taquin',
+     demoLink:''
     },
-
-    
-    /*{
-     
-      Title:'techivo',
-      Description:'techivo site  (personal practicing on design)',
-      Technologies:['Html','Css','Animation','Responsive'],
-      ghLink:'https://github.com/loayeldin/techivo',
-      demoLink:'https://techivo.netlify.app/'
-    },
-
-    {
-     
-      Title:'devolio',
-      Description:'devolio site  (personal practicing on design)',
-      Technologies:['Html','Css','Animation','Responsive'],
-      ghLink:'https://github.com/loayeldin/devolio',
-      demoLink:'https://devoliooo.netlify.app/'
-    },*/
 
   ]
   constructor(
