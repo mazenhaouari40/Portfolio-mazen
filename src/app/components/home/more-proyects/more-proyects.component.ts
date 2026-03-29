@@ -9,7 +9,7 @@ import { Router, NavigationEnd } from '@angular/router';
 export class MoreProyectsComponent implements OnInit {
   Projects = [
     {
-      Title:'Système de Gestion ResearchHub',
+      Title:'Système de Gestion ResearchHub (2025)',
       Description:'Cette Plateforme Permet la soumission d’articles, la gestion du processus d’évaluation par les pairs, l’authentification sécurisée des utilisateurs et propose des fonctionnalités avancées de recherche. Dispose d’une architecture backend , avec intégration de PostgreSQL et exposition de services via des API REST.',
       Technologies:['Spring boot','Java','PostgreSql','api rest','Angular'],
       ghLink:'https://github.com/MedAzizL/ResearchHub-Management-System',
